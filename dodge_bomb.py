@@ -15,7 +15,7 @@ DELTA = {
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 
-def gameover(screen: pg.Surface) -> None:
+def gameover(screen: pg.Surface) -> None: #定義
     black_surface= pg.Surface((WIDTH,HEIGHT))
     pg.draw.rect(black_surface,(0,0,0),pg.Rect(0,0,WIDTH,HEIGHT))
     black_surface.set_alpha(126)
@@ -31,7 +31,7 @@ def gameover(screen: pg.Surface) -> None:
     pg.display.update()
     time.sleep(5)
 
-        
+
 def check_bound(rct: pg.Rect) -> tuple[bool,bool]:
     """
     引数：こうかとんRectまたは爆弾Rect
